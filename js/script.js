@@ -10,21 +10,20 @@ function createGrid(gridSize) {
     for(j = 0; j < gridSize; j++){
         const row = document.createElement("div");
         row.className = "row";
-        row.border = "1px solid red";
         container.appendChild(row);
 
         for(let i = 0; i < gridSize; i++){
             const col = document.createElement("div");
-            col.style.border = "1px solid black";
             col.style.flexGrow = 1;
-            col.style.height = `${400 / gridSize}px`
-            col.style.width = `${400 / gridSize}px`
+            col.style.height = `${(400 / gridSize)}px`
+            col.style.width = `${(400 / gridSize)}px`
             col.id = "pixel";
             col.style.backgroundColor = document.getElementById("background-color").value;
             row.appendChild(col);
         }
     }
-    
+    let pixel = document.getElementById("pixel");
+    pixel.backgroundColor = document.getElementById("background-color").value;
 }
 
 function clearGrid() {
