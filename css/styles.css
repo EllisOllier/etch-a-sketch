@@ -22,6 +22,7 @@ h1 {
     padding: 2em;
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 #canvas-container {
@@ -31,6 +32,7 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 .cell-item {
