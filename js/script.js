@@ -2,8 +2,8 @@ const DEFAULT_GRID_SIZE = 16;
 const CONTAINER = document.getElementById("canvas-container");
 const CONTAINER_HEIGHT = CONTAINER.clientHeight;
 const CONTAINER_WIDTH = CONTAINER.clientWidth;
-
 createGrid(DEFAULT_GRID_SIZE);
+
 document.addEventListener('mouseover', function(e){
     if(e.target.id === "pixel"){
         let currentBrushColor = document.getElementById("brush-color");
