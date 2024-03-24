@@ -1,0 +1,54 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+#options-container, #canvas-container {
+    margin-left: 5vw;
+    margin-top: 10vh;
+}
+
+#options-container {
+    border: 1px solid black;
+    width: 20vw;
+    height: 60vh;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#canvas-container {
+    width: 60vw;
+    height: 60vh;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#options-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#btnClearCanvas {
+    width: 150px;
+    padding: 0.25em;
+    background-color: rgb(168, 168, 168);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#btnClearCanvas:hover {
+    background-color: rgb(110, 110, 110);
+}
+
+#btnClearCanvas:active {
+    background-color: rgb(168, 168, 168);
+}
